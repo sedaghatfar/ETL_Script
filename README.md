@@ -31,10 +31,15 @@ In sudo crontab -e to run Mon-Friday at 1 UTC (Make sure root has all the python
 #Example Query for number of leads in the last 30 days
 
 SELECT 
+
     created_at::date as date
+    
     ,COUNT(*)
+    
 FROM salesloft.people
+
 WHERE created_at >= CURRENT_DATE - 30
+
 GROUP BY 1
 
 
