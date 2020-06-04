@@ -1,1 +1,17 @@
-# ETL_Script
+# ETL Script
+
+Script to take data from Salesloft CRM https://developers.salesloft.com/api.html and load into Postgres
+
+Looking to Answer 
+
+1. # of leads added
+
+2. # of emails Sent
+
+3. # of email replies
+
+4. # of leads aded to interest cadence
+
+5. % of leads in interest cadence with touches in the last 2 weeks
+
+6. # of leads that have X Tag
