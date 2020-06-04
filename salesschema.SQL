@@ -33,7 +33,7 @@ CREATE TABLE salesloft.people (
   owner_id int
 );
 
-REATE TABLE salesloft.interest (
+CREATE TABLE salesloft.interest (
   id int,
   added_at timestamp,
   created_at timestamp,
