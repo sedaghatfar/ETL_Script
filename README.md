@@ -28,13 +28,12 @@ In sudo crontab -e to run Mon-Friday at 1 UTC (Make sure root has all the python
 15 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/uploads.py
 
 
-#Example Query for number of leads in the last 30 days
+# Example Query for number of leads in the last 30 days
 
 SELECT 
-
     created_at::date as date
     
-    ,COUNT(*)
+   ,COUNT(*)
     
 FROM salesloft.people
 
