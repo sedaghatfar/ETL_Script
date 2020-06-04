@@ -27,6 +27,12 @@ In sudo crontab -e to run Mon-Friday at 1 UTC (Make sure root has all the python
 
 15 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/uploads.py
 
+# Future Updates
+
+1. Check how often data is refreshed, as dropping and pulling all data can be time intesive
+2. Using a staging table
+3. Use https://cloud.google.com/functions for serverless script and have csvs stored in https://cloud.google.com/storage for backup
+
 
 # Example Query for number of leads in the last 30 days
 
