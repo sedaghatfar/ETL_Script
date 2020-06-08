@@ -21,16 +21,20 @@ In sudo crontab -e to run Mon-Friday at 1 UTC (Make sure root has all the python
 
 0 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/people.py
 
-5 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/lev_email.py
+5 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/new_emails.py
 
 10 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/interest.py
 
 15 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/uploads.py
 
+16 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/email_upload.py
+
 # Future Updates
 
 1. Check how often data is refreshed, as dropping and pulling all data can be time intesive
+    - This has been addressed using the updated_at column
 2. Using a staging table
+    - Done
 3. Use https://cloud.google.com/functions for serverless script and have csvs stored in https://cloud.google.com/storage for backup
 
 
