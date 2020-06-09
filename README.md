@@ -17,19 +17,19 @@ Looking to Answer
 6. Count of leads that have X Tag
 
 
-In sudo crontab -e to run Mon-Friday at 1 UTC (Make sure root has all the python libraries installed)
+In sudo crontab -e to run Mon-Friday at 10 UTC (Make sure root has all the python libraries installed)
 
-0 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/new_people.py
+0 10 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/new_people.py
 
-3 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/new_emails.py
+3 10 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/new_emails.py
 
-6 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/interest.py
+6 10 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/interest.py
 
-9 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/uploads.py
+9 10 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/uploads.py
 
-12 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/email_upload.py
+12 10 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/email_upload.py
 
-15 1 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/people_upload.py
+15 10 * * 1-5 cd /home/matts/Documents && sudo /usr/bin/python3 /home/matts/Documents/people_upload.py
 
 # Future Updates
 
