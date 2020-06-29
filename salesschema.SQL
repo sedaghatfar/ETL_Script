@@ -50,3 +50,16 @@ CREATE TABLE salesloft.interest (
   recent int,
   points int
   );
+  
+CREATE TABLE salesloft.calls (
+    id int,
+    call_to varchar,
+    duration numeric,
+    sentiment varchar,
+    disposition varchar,
+    created_at timestamp,
+    updated_at timestamp,
+    user_id int,
+    called_person_id int,
+    step_id numeric
+);
